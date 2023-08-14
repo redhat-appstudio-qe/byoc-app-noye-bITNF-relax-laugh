@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: swuu
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-xtba-tenant/byoc-app-noye/swuu@sha256:af00e34318e9af9d3ce13f9b069257683e386a21421ad7e02c159e184360d580
         name: my-java-quarkus
         ports:
         - containerPort: 8081
