@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: swuu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-xtba-tenant/byoc-app-noye/swuu@sha256:af00e34318e9af9d3ce13f9b069257683e386a21421ad7e02c159e184360d580
+        name: my-java-quarkus
+        resources: {}
+status: {}
